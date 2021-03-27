@@ -17,7 +17,7 @@ public class CoupleGeneratorBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "***";
+        return "1752119241:AAEz0W5ZKaOs2oAMg4-lRY_9Yvtthh886o0";
     }
 
     @Override
@@ -58,7 +58,8 @@ public class CoupleGeneratorBot extends TelegramLongPollingBot {
                     default:
                         if(update.getMessage().getText().equals("/start")){
                             InviaMessaggio("Genera delle coppie di nomi usando questo bot!\n" +
-                                    "Puoi elencare i nomi volta per volta oppure in più messaggi. Qualora avessi finito di caricare i nomi fai /done;" +
+                                    "Puoi elencare i nomi volta per volta oppure in più messaggi tramite il comando /newprocess." +
+                                    "Qualora avessi finito di caricare i nomi fai /done;" +
                                     " se invece pensi di aver sbagliato dei nomi invia /abort in modo tale da bloccare tutta l'operazione.",update);
                         }else {
                             InviaMessaggio("", update);
